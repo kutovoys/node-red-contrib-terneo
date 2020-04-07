@@ -1,9 +1,13 @@
 {
   "name": "node-red-contrib-terneo",
   "version": "0.1.0",
-  "description": "Nodes for control Terneo thermostat",
+  "description": "Terneo thermostats connectivity nodes for node-red",
   "dependencies": {
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kutovoys/node-red-contrib-terneo.git"
   },
   "node-red": {
     "nodes": {
@@ -14,8 +18,14 @@
   },
   "keywords": [
     "terneo",
-    "homekit"
+    "homekit",
+    "node-red"
   ],
   "author": "Sergey Kutovoy",
-  "license": "ISC"
+  "email": "kutovoy.s@gmail.com",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/kutovoys/node-red-contrib-terneo/issues"
+  },
+  "homepage": "https://github.com/kutovoys/node-red-contrib-terneo#readme"
 }
