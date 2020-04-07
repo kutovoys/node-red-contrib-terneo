@@ -1,0 +1,21 @@
+{
+  "name": "node-red-contrib-terneo",
+  "version": "0.1.0",
+  "description": "Nodes for control Terneo thermostat",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+  },
+  "node-red": {
+    "nodes": {
+      "terneo-in": "terneo-in.js",
+      "terneo-out": "terneo-out.js",
+      "terneo-host": "terneo-host.js"
+    }
+  },
+  "keywords": [
+    "terneo",
+    "homekit"
+  ],
+  "author": "Sergey Kutovoy",
+  "license": "ISC"
+}

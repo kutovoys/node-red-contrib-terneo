@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    RED.nodes.registerType('terneo-host',{
+        category: 'config',
+        defaults: {
+            name: {value:"Name",required:true},
+            host: {value:"Terneo IP",required:true},
+            sn: {value:"Serial Number",required:true},
+            auth: {value:"Token",required:true},
+        },
+        label: function() {
+            return this.name;
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="terneo-host">
+    <div class="form-row">
+        <label for="node-config-input-name"><i class="icon-bookmark"></i> Name:</label>
+        <input type="text" id="node-config-input-name">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-host"><i class="icon-bookmark"></i> IP address:</label>
+        <input type="text" id="node-config-input-host">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-sn"><i class="icon-bookmark"></i> SN:</label>
+        <input type="text" id="node-config-input-sn">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-auth"><i class="icon-bookmark"></i> Auth:</label>
+        <input type="text" id="node-config-input-auth">
+    </div>
+</script>

@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('terneo-in',{
+        category: 'Terneo',
+        color: '#fac126',
+        defaults: {
+            server: {value:"", type:"terneo-host"},
+            name: {value:""}
+        },
+        inputs:0,
+        outputs:1,
+        icon: "terneo.png",
+        label: function() {
+            return this.name||"terneo-in";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="terneo-in">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-server"><i class="icon-tag"></i> Config</label>
+        <input type="text" id="node-input-server" placeholder="Config">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="terneo-in">
+    <p>This node recieve data from local API Terneo and convert it to HomeKit</p>
+    <!—- Данная нода получает данные с локального API Terneo и конвертирует их в HomeKit-формат -->
+</script>

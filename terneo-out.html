@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    RED.nodes.registerType('terneo-out',{
+        category: 'Terneo',
+        color: '#fac126',
+        defaults: {
+            server: {value:"", type:"terneo-host"},
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:0,
+        align: 'right',
+        icon: "terneo.png",
+        label: function() {
+            return this.name||"terneo-out";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="terneo-out">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-server"><i class="icon-tag"></i> Config</label>
+        <input type="text" id="node-input-server" placeholder="Config">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="terneo-out">
+    <p>This node recieve data from HomeKit and send it to Terneo thermostat with local API</p>
+    <!—- Данная нода получает данные от HomeKit ноды, преобразоывает их и отправляет на терморегулятор Terneo с помощью локального API -->
+</script>
