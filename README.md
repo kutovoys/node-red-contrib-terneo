@@ -1,6 +1,7 @@
 # node-red-contrib-terneo
 Node-red nodes for Terneo floor heaters http://terneo.ua/ which work with local API and doesnt require terneo cloud access.
 ![Flow](images/flow.png)
+
 You can control Terneo thermostats from Apple HomeKit. By default its request data from thermostat every 30 sec.
 ##### Contains 3 nodes:
 - terneo-host: config node;
