@@ -27,11 +27,12 @@ You need Terneo device with firmware >= 2.3. Also you need to enable local API a
 - Serial number: You can find it in TerneoApp.
 - Auth token: You can recieve by the folowing command in terminal: 
 `curl -i -X POST https://my.hmarex.com/api/login/ -H 'Accept-Language: en' -H 'Content-Type: application/json' --data-raw '{"email": "myterneo@gmail.com", "password": "myterneo2018"}'` Change email and password for yours.
-- Save result
+- Polling time: Timeout in seconds for refresh data from thermostat.
+4. Save result
 
 ## Policy
 The author is not responsible for the use and consequences of use of this software.
 
 License
 ----
-GPL-3.0
+MIT

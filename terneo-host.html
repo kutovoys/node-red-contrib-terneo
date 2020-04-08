@@ -6,6 +6,7 @@
             host: {value:"Terneo IP",required:true},
             sn: {value:"Serial Number",required:true},
             auth: {value:"Token",required:true},
+            poll: {value:"30",required:true},
         },
         label: function() {
             return this.name;
@@ -15,19 +16,23 @@
 
 <script type="text/x-red" data-template-name="terneo-host">
     <div class="form-row">
-        <label for="node-config-input-name"><i class="icon-bookmark"></i> Name:</label>
+        <label for="node-config-input-name"><i class="icon-bookmark"></i> Name: </label>
         <input type="text" id="node-config-input-name">
     </div>
     <div class="form-row">
-        <label for="node-config-input-host"><i class="icon-bookmark"></i> IP address:</label>
+        <label for="node-config-input-host"><i class="icon-bookmark"></i> IP address: </label>
         <input type="text" id="node-config-input-host">
     </div>
     <div class="form-row">
-        <label for="node-config-input-sn"><i class="icon-bookmark"></i> SN:</label>
+        <label for="node-config-input-sn"><i class="icon-bookmark"></i> SN: </label>
         <input type="text" id="node-config-input-sn">
     </div>
     <div class="form-row">
-        <label for="node-config-input-auth"><i class="icon-bookmark"></i> Auth:</label>
+        <label for="node-config-input-auth"><i class="icon-bookmark"></i> Auth: </label>
         <input type="text" id="node-config-input-auth">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-poll"><i class="icon-bookmark"></i> Polling time(sec): </label>
+        <input type="text" id="node-config-input-poll">
     </div>
 </script>

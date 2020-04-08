@@ -23,7 +23,7 @@
   ],
   "author": "Sergey Kutovoy",
   "email": "kutovoy.s@gmail.com",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kutovoys/node-red-contrib-terneo/issues"
   },

@@ -7,6 +7,7 @@ module.exports = function (RED) {
             var ip = this.server.host;
             var sn = this.server.sn;
             var auth = this.server.auth;
+            var poll = this.server.poll;
             var node = this;
             //функция получения телеметрии - на выходе полный json
             async function requestTelemetry() {
@@ -25,7 +26,7 @@ module.exports = function (RED) {
                     var telemetry = await response.json();
                     return telemetry;
                 } catch (err) {
-                    node.error('Ошибка запроса телеметрии')
+                    node.error('Error request telemetry')
                 }
             }
             //функция получения параметров - на выходе полный json
@@ -46,7 +47,7 @@ module.exports = function (RED) {
                     var params = await response.json();
                     return params;
                 } catch (err) {
-                    node.error('Ошибка запроса параметров')
+                    node.error('Error request pamametrs')
                 }
             }
             //Функция преобразования и формирования json для HomeKit
@@ -90,11 +91,11 @@ module.exports = function (RED) {
                         })
                     }
                 } catch (err) {
-                    node.error('Ошибка в преобразовании данных')
+                    node.error('Error prepare data for HomeKit')
                 }
             }
             try {
-                setInterval(transform, 30000, )
+                setInterval(transform, poll*1000, )
             } catch (err) {
                 node.error(err)
             }
